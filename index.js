@@ -1,7 +1,9 @@
 const TelegramBot = require('node-telegram-bot-api');
 const fs = require('fs');
 
-const token = '6114573552:AAFUs_xgteTw6vyMj0qK-sc4RwYC_grD37k';
+// Environment variable থেকে Token নিন
+const token = process.env.BotToken;
+
 const bot = new TelegramBot(token, { polling: true });
 
 // Dynamic command loading
