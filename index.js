@@ -9,6 +9,6 @@ bot.onText(/\/start/, (msg) => {
   bot.sendMessage(msg.chat.id, "Hi!");
 });
 
-bot.onText(DJ, (msg) => {
+bot.onText(/DJ/, (msg) => {
   bot.sendMessage(msg.chat.id, "I,am Ready");
 });
