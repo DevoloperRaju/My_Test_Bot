@@ -7,7 +7,9 @@ module.exports = (bot) => {
     // Step 1: Welcome Message
     bot.sendMessage(chatId, '👋 Welcome to IoLent!\n\nEarn diamonds and grow your income!');
 
-    // Step 2: Show Main Menu
-    mainMenu(bot, chatId);
+    // Step 2: Delay দিয়ে Main Menu
+    setTimeout(() => {
+      mainMenu(bot, chatId);
+    }, 1500); // 1500 milliseconds = 1.5 seconds
   });
 };
