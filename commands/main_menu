@@ -1,0 +1,15 @@
+module.exports = (bot, chatId) => {
+  const options = {
+    reply_markup: {
+      keyboard: [
+        ['🧾 Balance', '👥 Referral'],
+        ['✅ Daily Task', '🆘 Support'],
+        ['🏆 Achievement', '🙍‍♂️ Profile'],
+        ['🚀 Our Project', '➡️ Next Page']
+      ],
+      resize_keyboard: true,
+    },
+  };
+
+  bot.sendMessage(chatId, '🏠 Main Menu:\nPlease select an option below:', options);
+};
