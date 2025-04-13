@@ -1,4 +1,4 @@
-const mainMenu = require('./main_menu');
+const mainMenu = require('./next_menu');
 
 module.exports = (bot, chatId) => {
   const nextMenuOptions = {
