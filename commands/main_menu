@@ -1,4 +1,4 @@
-/*const nextMenu = require('./next_menu');
+const nextMenu = require('./next_menu');
 
 module.exports = (bot, chatId) => {
   // পুরাতন message listener গুলো সরিয়ে ফেলি
@@ -21,4 +21,4 @@ module.exports = (bot, chatId) => {
   // Listen for Next Page button
   bot.onText(/➡️ Next Page/, (msg) => {
   nextMenu(bot, msg.chat.id);
-});*/
+});
