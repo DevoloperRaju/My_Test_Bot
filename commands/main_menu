@@ -1,6 +1,9 @@
 const nextMenu = require('./next_menu');
 
 module.exports = (bot, chatId) => {
+  // পুরাতন message listener গুলো সরিয়ে ফেলি
+  bot.removeAllListeners('message');
+
   const options = {
     reply_markup: {
       keyboard: [
