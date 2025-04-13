@@ -11,5 +11,4 @@ module.exports = (bot, chatId) => {
     },
   };
 
-  bot.sendMessage(chatId, '🏠 Main Menu:\nPlease select an option below:', options);
-};
+  
