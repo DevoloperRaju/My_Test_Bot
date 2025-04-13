@@ -1,5 +1,7 @@
 const mainMenu = require('./main_menu');
 
+bot.removeAllListeners('message');
+
 module.exports = (bot, chatId) => {
   const nextMenuOptions = {
     reply_markup: {
