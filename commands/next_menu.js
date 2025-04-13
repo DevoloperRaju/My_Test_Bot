@@ -1,13 +1,11 @@
-const mainMenu = require('./next_menu');
+const mainMenu = require('./main_menu');
 
 module.exports = (bot, chatId) => {
   const nextMenuOptions = {
     reply_markup: {
       keyboard: [
-        ['🎁 Gift Code'],
-        ['🕑 History'],
-        ['📢 Notice'],
-        ['🧩 Learn About IoLent'],
+        ['🎁 Gift Code', '🕑 History'],
+        ['📢 Notice', '🧩 Learn About IoLent'],
         ['🏅 LeaderBoard'],
         ['⬅️ Previous Page']
       ],
