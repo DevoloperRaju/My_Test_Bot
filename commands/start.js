@@ -10,6 +10,6 @@ module.exports = (bot) => {
     // Step 2: Delay দিয়ে Main Menu
     setTimeout(() => {
       mainMenu(bot, chatId);
-    }, 1500); // 1500 milliseconds = 1.5 seconds
+    }, 500); // 500 milliseconds =.5 seconds
   });
 };
