@@ -1,8 +1,9 @@
 const mainMenu = require('./main_menu');
 
-bot.removeAllListeners('message');
-
 module.exports = (bot, chatId) => {
+  // পুরাতন message listener গুলো সরিয়ে ফেলি
+  bot.removeAllListeners('message');
+
   const nextMenuOptions = {
     reply_markup: {
       keyboard: [
@@ -18,9 +19,7 @@ module.exports = (bot, chatId) => {
   bot.sendMessage(chatId, '📖 Next Page:\nPlease select an option below:', nextMenuOptions);
 
   // Listen for Previous Page button
-  bot.onText('message', (msg) => {
-    if (msg.text === '⬅️ Previous Page') {
-      mainMenu(bot, msg.chat.id);
-    }
+  bot.onText(/⬅️ Previous Page/, (msg) => {
+    mainMenu(bot, msg.chat.id);
   });
 };
