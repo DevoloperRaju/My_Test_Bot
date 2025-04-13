@@ -18,7 +18,7 @@ module.exports = (bot, chatId) => {
   bot.sendMessage(chatId, '📖 Next Page:\nPlease select an option below:', nextMenuOptions);
 
   // Listen for Previous Page button
-  bot.on('message', (msg) => {
+  bot.onText('message', (msg) => {
     if (msg.text === '⬅️ Previous Page') {
       mainMenu(bot, msg.chat.id);
     }
